@@ -1,7 +1,7 @@
-package org.example.banks.sberbank;
+package org.example.bank.sberbank;
 
-import org.example.banks.Deposit;
-import org.example.banks.Deposits;
+import org.example.bank.Deposit;
+import org.example.bank.Bank;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 
-public class SberbankDeposit implements Deposits {
+public class SberbankDeposit implements Bank {
     @Override
     public Collection<Deposit> deposits() throws IOException {
 
