@@ -1,14 +1,9 @@
 package org.example;
 
-import org.example.banks.sberbank.SberbankDeposit;
-
-import java.io.IOException;
+import org.example.bank.tbank.Tbank;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        SberbankDeposit deposit = new SberbankDeposit();
-        deposit.deposits();
-        System.out.println();
+    public static void main(String[] args) throws Exception {
+        new Tbank().deposits().forEach(System.out::println);
     }
 }
-
